@@ -111,3 +111,18 @@ rownames(track) <- sample.names
 head(track)
 ```
 
+```{r}
+taxa <- assignTaxonomy(seqtab.nochim, "/home/rstudio/tutoriel_dada2/silva_nr99_v138.2_toGenus_trainset.fa.gz?download=1", multithread=TRUE)
+```
+
+```{r}
+taxa.print <- taxa # Removing sequence rownames for display only
+rownames(taxa.print) <- NULL
+head(taxa.print)
+```
+# installation de phyloseq
+
+
+
+
+
